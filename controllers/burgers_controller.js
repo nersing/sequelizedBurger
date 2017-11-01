@@ -1,7 +1,7 @@
-// var express = require("express");
+var express = require("express");
 
-// var router = express.Router();
-// var burger = require("../models/burger");
+var router = express.Router();
+var burger = require("../models/burger");
 
 // // get route -> index
 // router.get("/", function(req, res) {
@@ -38,7 +38,7 @@
 //   });
 // });
 
-// module.exports = router;
+
 
 
 // Requiring our Burger model
@@ -50,7 +50,7 @@ module.exports = function(app){
 //GET route to redirect
 app.get('/', function(req, res){
     res.redirect("/api/all");
-  })
+  });
 
 
 //GET route to show all of the burgers
@@ -78,10 +78,10 @@ app.put("/api/:id", function(req, res){
     devoured: true
   }, {
     where: {
-      id: req.body.id
+      id: req.body.burger_id
     }
-  }).then(function(dbBurger){
-    res.redirect("/api/all")
+  }).then(function(){
+    res.redirect("/")
   });
 });
 
