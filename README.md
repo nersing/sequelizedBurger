@@ -1,5 +1,5 @@
 # sequelizedBurger
-A burger eating application created with Node.js/Express/MySQL/Sequelize/Handlebars
+A burger eating application created with Node.js, Express, MySQL, Sequelize, and Handlebars
 
 ## Description
 This application is a full stack application that uses HTML/CSS on the frontend, along with Handlebars, and the backend uses Express.js and Node.js. The data for this application is stored in MySQL, however the application uses sequelize node package.
